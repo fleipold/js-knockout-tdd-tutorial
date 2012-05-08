@@ -1,4 +1,4 @@
 js-knockout-tdd-tutorial
 ========================
 
-Example 
+This project contains examples for a tutorial that introduces tdd using mvvm with knockout.js.
