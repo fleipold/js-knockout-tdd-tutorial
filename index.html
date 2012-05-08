@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <script type="text/javascript" src="./lib/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="./lib/knockout-2.0.0.debug.js"></script>
+        <script type="text/javascript" src="./src/Example1.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/tutorial.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row"/>
+                <div class="span2 offset2">
+                    <h1>Calculator</h1>
+                </div>
+            </div>
+            <form class="form-horizontal">
+                <fieldset>
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label>Input</label>
+                        </div>
+                        <div class="controls">
+                            <input type="text" data-bind="value: input"/>
+                            <button data-bind="click: calc">calculate!</button>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label>Result</label>
+                        </div>
+                        <div class="controls">
+                            <input type="text" data-bind="value: output"/>
+                        </div>
+                    </div>
+                </fieldset>
+            <form>
+        </div>
+
+        <script>
+            var model = ViewModel();
+            ko.applyBindings(model)
+        </script>
+    </body>
+</html>
