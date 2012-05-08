@@ -4,12 +4,10 @@ var ViewModel = function(){
     self.input = ko.observable('')
 
     self.calc = function(){
-        var numericInput = parseInt(self.input());
-        if (numericInput=NaN){
-            return;
-        }
-        var numericOutput = 2 * numericInput;
+        var input = self.input();
+        var numericInput = parseInt(input);
 
+        var numericOutput = 2 * numericInput;
         self.output("" + numericOutput);
     }
 
