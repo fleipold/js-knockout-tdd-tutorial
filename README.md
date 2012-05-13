@@ -5,12 +5,15 @@ This project contains examples for a tutorial that introduces tdd using mvvm wit
 
 
 # Example 1 - Binding field values and actions
+<index.html>
 
 # Example 2 - Validation
+<example2.html>
 
 # Example 3 - Binding Focus
 
+TBD
 
 # Example 4 - Selenium
 
-
+TBD
