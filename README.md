@@ -12,8 +12,14 @@ This project contains examples for a tutorial that introduces tdd using mvvm wit
 
 # Example 3 - Binding Focus
 
-TBD
+# TBD
 
-# Example 4 - Selenium
+# Dependencies on Web-Services
+
+# Dealing with collections
+
+# Custom Binding
+
+# WebDriver
 
 TBD
