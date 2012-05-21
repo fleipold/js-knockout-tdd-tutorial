@@ -44,7 +44,7 @@ describe("Duplicator Example 2", function() {
     });
 
     it("should show a validation message to the user when input is not numeric", function(){
-        viewModel,input("garbage");
+        viewModel.input("garbage");
         viewModel.calc();
 
         expect(viewModel.validationMessage()).toEqual("You must enter a number!");

@@ -6,6 +6,8 @@ var DuplicatorExample2 = function(){
 
     self.inputValidation = ko.observable(true);
 
+    self.validationMessage = ko.observable('');
+
     var validation = new RegExp("^\\d*$");
 
     self.calc = function(){
@@ -13,7 +15,8 @@ var DuplicatorExample2 = function(){
 
         if (! validation.test(input)){
             self.inputValidation(false);
-            self.output("");
+            self.validationMessage('You must enter a number!');
+            self.output('');
             return;
         }
 
@@ -21,7 +24,8 @@ var DuplicatorExample2 = function(){
         var numericInput = parseInt(input);
 
         var numericOutput = 2 * numericInput;
-        self.output("" + numericOutput);
+        self.validationMessage('');
+        self.output('' + numericOutput);
     }
 
     self.output = ko.observable('');
