@@ -10,39 +10,24 @@
 
     <body>
         <div class="container">
-            <div class="row"/>
-                <div class="span2 offset2">
-                    <h1>Duplicator</h1>
-                </div>
+            <div class="page-header">
+                <h1>Duplicator <small>verdoppeln</small></h1>
             </div>
-            <form class="form-horizontal">
-                <fieldset>
-                    <div class="control-group" data-bind="css: {error: !inputValidation()}">
-                        <div class="control-label">
-                            <label>Input</label>
-                        </div>
-                        <div class="controls">
-                            <div class="input-append"> 
-                                <input class="span2" type="text" data-bind="value: input"/>
+            <div class="row">   
+                <div class="span4">   
+                    <form class="form-inline">
+                        <fieldset class="control-group" data-bind="css: {error: !inputValidation()}">
+                            <div class="controls"> 
+                                <input class="span2" placeholder="Input" type="text" data-bind="value: input"/>
                                 <button class="btn" data-bind="click: calc">calculate!</button>
                                 <span class="help-inline error" data-bind="text: validationMessage"></span>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="control-group">
-                        <div class="control-label">
-                            <label>Result</label>
-                        </div>
-                        <div class="controls">
-                            <input type="text" data-bind="value: output"/>
-
-                        </div>
-                    </div>
-                </fieldset>
-            <form>
+                        </fieldset>
+                    </form> 
+                </div>
+                <div class="result span1 well" data-bind="text: output"></div>    
+            </div>
         </div>
-
         <script>
             var model = DuplicatorExample2();
             ko.applyBindings(model)

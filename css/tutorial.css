@@ -1,1 +1,12 @@
-body { padding-top: 90px;}
+body { 
+	padding-top: 90px;
+}
+
+.result{
+	font-weight: bold;
+	font-size: 16px;
+	text-align: right;
+}
+.help-inline {
+	padding-top: 4px;
+}
