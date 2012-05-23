@@ -2,11 +2,19 @@ body {
 	padding-top: 90px;
 }
 
+.decoration,
 .result{
 	font-weight: bold;
 	font-size: 16px;
 	text-align: right;
+	border-top: 1px solid #eee;
 }
+
+.decoration {
+	padding-bottom: 5px;
+	border-top: none;
+}
+
 .help-inline {
 	padding-top: 4px;
 }
