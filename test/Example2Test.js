@@ -30,6 +30,13 @@ describe("Duplicator Example 2", function() {
 
         expect(viewModel.inputValidation()).toEqual(false);
     })
+    
+    it("should validate that input is not empty", function(){
+        viewModel.input("");
+        viewModel.calc();
+
+        expect(viewModel.inputValidation()).toEqual(false);
+    })
 
     it("should not indicate validation error, after input is corrected", function(){
         viewModel.input("garbage");

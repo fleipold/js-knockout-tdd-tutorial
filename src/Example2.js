@@ -13,7 +13,7 @@ var DuplicatorExample2 = function(){
     self.calc = function(){
         var input = self.input();
 
-        if (! validation.test(input)){
+        if (! validation.test(input) || input.length < 1){
             self.inputValidation(false);
             self.validationMessage('You must enter a number!');
             self.output('');
