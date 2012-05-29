@@ -2,6 +2,10 @@ body {
 	padding-top: 90px;
 }
 
+form {
+	margin-bottom: 0;
+}
+
 .decoration,
 .result{
 	font-weight: bold;
@@ -17,4 +21,6 @@ body {
 
 .help-inline {
 	padding-top: 4px;
+	min-height: 1.5em;
+	display: block !important; /* I don't approve of this */
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <script type="text/javascript" src="./lib/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="./lib/knockout-2.0.0.debug.js"></script>
+        <script type="text/javascript" src="./src/Example3.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/tutorial.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">   
+                <div>
+                    <div class="page-header">
+                        <h1>Duplicator <small>verdoppeln</small></h1>
+                    </div>
+                    <div class="span6">   
+                        <form class="span4 form-inline">
+                            <fieldset class="control-group" data-bind="css: {error: !inputValidation()}">
+                                <div class="controls"> 
+                                    <input autofocus class="span2" placeholder="Input" type="text" data-bind="value: input"/>
+                                    <button class="btn" data-bind="click: calc">calculate!</button>
+                                    <span class="help-inline error" data-bind="text: validationMessage"></span>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="span3">
+                            <div class="decoration"><span data-bind="text: input"></span> x 2</div> 
+                            <div class="result" data-bind="text: output"></div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="span4">
+                    <h2><small>Memory</small></h2>
+                    <div class="memory well" data-bind="text: memory"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var model = DuplicatorExample3();
+            ko.applyBindings(model)
+        </script>
+    </body>
+</html>
